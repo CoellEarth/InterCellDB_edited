@@ -366,9 +366,6 @@ AnalyzeInterInFullView <- function(
 				if (!is.null(property$location) && length(property$location) > 0) {
 					data.location <- subset(data.location, GO.Term.target %in% property$location)
 				}
-				if (!is.null(property$location.score) && length(property$location.score) > 0) {
-					data.location <- subset(data.location, score %in% property$location.score)
-				}
 				
 				if (!is.null(property$type) && length(property$type) > 0) {
 					data.type <- subset(data.type, Keyword.Name %in% property$type)
